@@ -1,6 +1,7 @@
 function printTriangle(height: number): void {
-    for (let i = 0; i < height; i++) {
-        console.log('*'.repeat(i + 1));
+    for (let i = 1; i < height; i++) {
+        let row = ' '.repeat(height - i)+ '*'.repeat(i);
+        console.log(row);
     }
 }
 

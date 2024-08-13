@@ -25,5 +25,5 @@ function tentukanGrade(rataRata: number): string {
   }
   
   // Contoh penggunaan
-  const result = hitungRataRatadanGrade(85, 90, 78, 88);
+  const result = hitungRataRatadanGrade(102, 90, 78, 88);
   console.log(result);

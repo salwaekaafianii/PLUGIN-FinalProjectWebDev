@@ -1,23 +1,23 @@
 "use strict";
-function getGrade(average) {
-    if (average >= 90)
+function tentukanGrade(rataRata) {
+    if (rataRata >= 90)
         return 'A';
-    if (average >= 80)
+    if (rataRata >= 80)
         return 'B';
-    if (average >= 70)
+    if (rataRata >= 70)
         return 'C';
-    if (average >= 60)
+    if (rataRata >= 60)
         return 'D';
     return 'E';
 }
-function calculateAverageGrade(webProgramming, computerProgramming, statistics, databaseSystems) {
+function hitungRataRatadanGrade(webProgramming, computerProgramming, statistics, databaseSystems) {
     if ([webProgramming, computerProgramming, statistics, databaseSystems].some(value => value < 0 || value > 100)) {
         return "Semua nilai harus diisi dan berada dalam rentang 0-100.";
     }
-    const average = (webProgramming + computerProgramming + statistics + databaseSystems) / 4;
-    const grade = getGrade(average);
-    return `Rata-rata nilai: ${average.toFixed(2)}, Grade: ${grade}`;
+    const rataRata = (webProgramming + computerProgramming + statistics + databaseSystems) / 4;
+    const grade = tentukanGrade(rataRata);
+    return `Rata-rata nilai: ${rataRata.toFixed(2)}, Grade: ${grade}`;
 }
 // Contoh penggunaan
-const result = calculateAverageGrade(85, 90, 78, 88);
+const result = hitungRataRatadanGrade(102, 90, 78, 88);
 console.log(result);
